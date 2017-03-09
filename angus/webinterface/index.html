@@ -1,0 +1,16 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <img src="/mjpeg"></img>
+    <div id="notifications">
+    </div>
+    <script>
+      var source = new EventSource("/notifications");
+      source.onmessage = function(event) {
+        document.getElementById("notifications").innerHTML += event.data + "<br>";
+      };
+    </script>
+
+  </body>
+</html>
