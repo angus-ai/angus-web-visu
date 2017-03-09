@@ -22,4 +22,4 @@ Installation and usage
 .. code:: bash
 
    $> pip install angus-web-visu
-   $> python -m angus.webinterface.server
+   $> python -m angusvisu.webinterface.server
