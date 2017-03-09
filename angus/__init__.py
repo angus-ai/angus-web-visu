@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 # Licensed to the Apache Software Foundation (ASF) under one
@@ -18,29 +17,6 @@
 # specific language governing permissions and limitations
 # under the License.
 
-from setuptools import setup, find_packages
+import pkgutil
 
-__updated__ = "2017-03-09"
-__author__ = "Aurélien Moreau"
-__copyright__ = "Copyright 2017, Angus.ai"
-__credits__ = ["Aurélien Moreau"]
-__license__ = "Apache v2.0"
-__maintainer__ = "Aurélien Moreau"
-__status__ = "Production"
-
-__version__ = "1.0.1"
-
-setup(name='angus-web-visu',
-      version=__version__,
-      description='Angus Visualization Toolkit',
-      author=__author__,
-      author_email='aurelien.moreau@angus.ai',
-      url='http://www.angus.ai/',
-      install_requires=[
-          "angus-sdk-python",
-          "tornado",
-          "pytz",
-      ],
-      packages=find_packages(),
-      license=__license__,
-      )
+__path__ = pkgutil.extend_path(__path__, __name__)
