@@ -28,7 +28,7 @@ __license__ = "Apache v2.0"
 __maintainer__ = "Aurélien Moreau"
 __status__ = "Production"
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 setup(name='angus-web-visu',
       version=__version__,
@@ -41,5 +41,6 @@ setup(name='angus-web-visu',
           "tornado",
           "pytz",
       ],
+      packages=find_packages(),
       license=__license__,
       )
