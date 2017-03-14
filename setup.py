@@ -20,7 +20,7 @@
 
 from setuptools import setup, find_packages
 
-__updated__ = "2017-03-09"
+__updated__ = "2017-03-14"
 __author__ = "Aurélien Moreau"
 __copyright__ = "Copyright 2017, Angus.ai"
 __credits__ = ["Aurélien Moreau"]
@@ -28,7 +28,7 @@ __license__ = "Apache v2.0"
 __maintainer__ = "Aurélien Moreau"
 __status__ = "Production"
 
-__version__ = "1.0.4"
+__version__ = "1.0.5"
 
 setup(name='angus-web-visu',
       version=__version__,
@@ -36,6 +36,7 @@ setup(name='angus-web-visu',
       author=__author__,
       author_email='aurelien.moreau@angus.ai',
       url='http://www.angus.ai/',
+      include_package_data=True,
       install_requires=[
           "angus-sdk-python",
           "tornado",
